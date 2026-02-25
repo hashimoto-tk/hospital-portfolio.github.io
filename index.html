@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>医療法人 あおぞら整形外科クリニック</title>
+        <meta name="description" content="福岡にある整形外科専門のクリニックです。地域に寄り添う医療を理念とし、腰痛や関節障害の治療、リハビリテーションを中心とした医療を提供しています。">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" href="./icon.jpg">
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./style.css">
+        <script src="script.js" defer></script>
+    </head>
+    
+    <body>
+        <!-- ローディング画面 -->
+        <div id="loading">
+            <img class="rotate-img" src="./icon.jpg" alt="ローディング画面">
+        </div>
+        <!-- モーダル -->
+        <div id="portfolio-modal" class="modal">
+            <div class="modal-box">
+                <p>
+                このサイトは学習目的で制作した架空のWebサイトです。<br>
+                実在の企業・団体とは関係ありません。
+                </p>
+                <button id="modal-close">OK</button>
+            </div>
+        </div>
+        <!-- main -->
+        <header id="header" class="curved">
+            <div class="flex">
+                <div class="site-title">
+                    <a href="index.html"><img src="./logo.png" alt="あおぞら整形外科クリニック"></a>
+                </div>
+                <div class="telephone-number">
+                    <a href="tel:123XXXXXXX"><img src="./TEL.png" alt="電話番号"></a>
+                </div>
+                <div id="hmb" class="onlySP">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav id="menu-panel">
+                <ul>
+                    <li><a href="about.html">病院について</a></li>
+                    <li><a href="examination.html">受診の流れ</a></li>
+                    <li><a href="riha.html">リハビリについて</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 class="main-visual">
+                地域に寄り添う<br class="onlySP">医療を目指して
+            </h1>
+            <a class="btn" href="#">Web問診はこちら</a>
+            <section id="announce" class="wrapper">
+                <h2>診療案内</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="reseption-time">受付時間</th>
+                            <th class="day-of-week">月</th>
+                            <th class="day-of-week">火</th>
+                            <th class="day-of-week">水</th>
+                            <th class="day-of-week">木</th>
+                            <th class="day-of-week">金</th>
+                            <th class="day-of-week">土</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><th>8:30-11:30</th><td>◯</td><td>◯</td><td>◯</td><td>◯</td><td>◯</td><td>◯</td></tr>
+                        <tr><th>12:30-16:30</th><td>◯</td><td>◯</td><td>休</td><td>◯</td><td>◯</td><td>休</td></tr>
+                    </tbody>
+                </table>
+                <div class="flex">
+                    <p class="closed-days">休診</p>
+                    <p class="closed-days-list">
+                        水曜午後・土曜午後<br class="onlySP">・日曜・祝日<br>
+                        年末年始<br class="onlySP">（12月28日-1月3日）
+                    </p>
+                </div>
+            </section>
+            <section  id="examination" class="wrapper">
+                <h2>受診方法</h2>
+                <div class="flex-mymunber onlySP-column">
+                    <img src="./card-reader.jpg" alt="マイナンバーカード読み取り機器">
+                    <p class="text">
+                        当クリニックではオンライン資格確認システムを導入しています。<br>
+                        マイナンバーによる保険証(マイナ保険証)の利用で、患者様の診療情報を活用し、より円滑な医療提供が可能です。<br>
+                        ぜひマイナ保険証をご利用ください。
+                    </p>
+                </div>
+                <h3>予約方法について</h3>
+                <div class="flex-appointment onlySP-column fadein">
+                    <div class="box1">
+                        <h4>お電話でのご予約</h4>
+                        <p>
+                            予約なしでも受診は可能ですが、<br>
+                            予約の方を優先的に診療しています。
+                        </p>
+                        <p><a href="tel:123XXXXXXX">電話番号：123-XXX-XXX</a></p>
+                    </div>
+                    <div class="box2">
+                        <h4>web問診へのご入力</h4>
+                        <p>
+                            初診の方は来院前にWEB問診への入力をお願いいたします。<br>
+                            WEB問診に表示される回答番号をメモし、来院時に受付にご提示ください。
+                        </p>
+                        <a class="btn" href="#">Web問診はこちら</a>
+                    </div>
+                </div>
+                <h3>当日の流れはこちら</h3>
+                <div class="flex-steps onlySP-column fadein">
+                    <div class="box1">
+                        <p>
+                            外来受付で必要書類をご提示ください。<br>
+                            WEB問診を入力済の方は、受付に回答番号をお知らせください。
+                        </p>
+                    </div>
+                    <div class="box2">
+                        <p>
+                            受付より外来案内ファイルを受け取り、<br>
+                            各診察室前の椅子へ移動します。
+                        </p>
+                    </div>
+                    <div class="box3">
+                        <p>
+                            待合室にてお待ちください。<br>
+                            番号でお呼びします。
+                        </p>
+                    </div>
+                </div>
+                <p class="notice">
+                    <em>＜＜ 来院前のWEB問診がお済みでない方 ＞＞</em><br>
+                    受付で「問診票」をお渡ししますので、必要事項をご記入いただきご提出ください。
+                </p>
+                <h3>初診の方へ</h3>
+                <div class="flex-prepare onlySP-column">
+                    <div class="item fadein">
+                        <img src="./first.png" alt="初診に必要な物">
+                    </div>
+                    <div class="item">
+                        <p>
+                            ご準備いただくもの<br>
+                            下記をご準備いただき、受診してください。
+                        </p>
+                        <ul>
+                            <li>マイナ保険証</li>
+                            <li>健康保険証</li>
+                            <li>おくすり手帳</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>再診の方へ</h3>
+                <div class="flex-prepare onlySP-column">
+                    <div class="item">
+                        <p>
+                            お持ちいただくもの<br>
+                            再診受付へ、下記を提出してください。
+                        </p>
+                        <ul>
+                            <li>当院診察券</li>
+                            <li>マイナ保険証</li>
+                            <li>健康保険証</li>
+                        </ul>
+                    </div>
+                    <div class="item fadein">
+                        <img src="./again.png" alt="初診に必要な物">
+                    </div>
+                </div>
+                <p class="notice">
+                    保険証は毎月確認いたします。毎月最初の来院時に必ず提出してください。<br>
+                    住所、電話番号に変更がありましたら、必ずお知らせください。
+                </p>
+            </section>
+            <section id="riha" class="wrapper">
+                <h2>リハビリテーションの流れ</h2>
+                <div class="flex-riha onlySP-column fadein">
+                    <div class="frame">
+                        <img src="./prescription.jpg" alt="リハビリ処方箋">
+                        <p>
+                            リハビリの必要性があると<br>
+                            判断した場合<br>
+                            リハビリ処方箋が出ます
+                        </p>
+                    </div>
+                    <div class="frame">
+                        <img src="./riha-staff.jpg" alt="療法士が案内">
+                        <p>
+                            リハビリ処方箋を持って<br>
+                            リハビリ室へお越しください
+                        </p>
+                    </div>
+                    <div class="frame">
+                        <img src="./riha.jpg" alt="リハビリ治療">
+                        <p>
+                            関節や筋肉から運動能力まで<br>
+                            総合的に検査・評価し治療させていただきます
+                        </p>
+                    </div>
+                    <div class="frame-last">
+                        <img src="./counseling.jpg" alt="リハビリの説明">
+                        <p>
+                            治療内容と結果をもとに今後のプランを説明します<br>
+                            次回の予約をご相談します
+                        </p>
+                    </div>
+                </div>
+                <a class="btn" href="riha.html">リハビリについての詳細</a>
+            </section>
+            <section id="access" class="wrapper">
+                <h2>アクセス・お問い合せ</h2>
+                <div class="map onlySP-column">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.6002309597425!2d130.41815247569681!3d33.589727473334634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354191c7e6f9b375%3A0x2ee22b3d45b98b90!2z5Y2a5aSa6aeF!5e0!3m2!1sja!2sjp!4v1751905698838!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="map-text">
+                        <p>
+                            〒123-4567<br>
+                            福岡県福岡市博多区博多駅123-123<br>
+                            <a href="tel:123XXXXXXX">電話番号：123-XXX-XXX</a>
+                        </p>
+                        <p>
+                            駐車場には限りがございます。<br>
+                            満車の場合はお近くのコインパーキングをご利用ください。
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="flex-footer">
+                <p>
+                    〒123-4567<br>
+                    福岡県福岡市博多区<br class="onlySP">博多駅123-123<br>
+                    <a href="tel:123XXXXXXX">電話番号：123-XXX-XXX</a>
+                </p>
+                <ul>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li><a href="privacy.html">プライバシーポリシー</a></li>
+                </ul>
+                <div class="site-title onlyPC">
+                    <a href="index.html"><img src="./logo.png" alt="あおぞら整形外科クリニック"></a>
+                </div>
+            </div>
+            <p class="copyright"><small>&copy;Aozora Orthopedics clinic</small></p>
+        </footer>
+    </body>
+</html>
